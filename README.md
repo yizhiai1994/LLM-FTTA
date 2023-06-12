@@ -16,4 +16,5 @@ Everything I know about LLM in NLP.
 ### Acceleration Techniques
 ## Fine-Tuning
 ## Checking
+## deployment
 ## Application
