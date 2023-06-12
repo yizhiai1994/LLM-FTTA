@@ -8,7 +8,12 @@ Everything I know about LLM in NLP.
 ### Data Pre-Process
 ### Task Specify
 ## Pre-Training
-### 
+### Model Structure
+### Parameters Selection
+### Optimizer
+### Training Pipline
+### Training Skills
+### Acceleration Techniques
 ## Fine-Tuning
 ## Checking
 ## Application
