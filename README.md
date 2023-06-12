@@ -1,4 +1,4 @@
-# LLM-FTTA
+# LLM-FTTA (under construction)
 Large Language Model —— From Training To Application
 
 Everything I know about LLM in NLP.
