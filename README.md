@@ -43,13 +43,27 @@ Related Models:
 ### Model Structure
 ### Training Objective
 #### MLM (Mask Language Model)
+Detail[1]:
+> +  Simply mask some percentage of the input tokens at random, and then predict those masked tokens.
+Example[1]:
+> + Orginal: my dog is hairy
+> + Input: my dog is [MASK]
+> + Output: hairy
+>> + Tips: In the paper "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", the authors said "80% of the time: Replace the word with the [MASK] token" and "10% of the time: Replace the word with a
+random word" and "10% of the time: Keep the word unchanged"
 Related Models:
 > + GPT-3 (GPT-3: Language Models are Few-Shot Learners)
 > + BERT (BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding)
 > + RoBERTa (RoBERTa: A Robustly Optimized BERT Pretraining Approach)
 > + ALBERT (ALBERT: A Lite BERT for Self-supervised Learning of Language Representations)
-> 
-#### NSP (Next Sentence Predict)
+#### NSP (Next Sentence Prediction)
+Detail[1]:
+> + Choosing the sentences A and B for each pretraining example, 50% of the time B is the actual next sentence that follows A (labeled as IsNext), and 50% of the time it is a random sentence from the corpus (labeled as NotNext).
+Example[1]:
+> + Input1: [CLS] the man went to [MASK] store [SEP] he bought a gallon [MASK] milk [SEP]
+> + Output1: IsNext
+> + Input2: [CLS] the man [MASK] to the store [SEP] penguin [MASK] are flight ##less birds [SEP]
+> + Output2: NotNext
 Related Models:
 > + BERT (BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding)
 > + UniLM (Unified Language Model Pre-training for Natural Language Understanding and Generation)
@@ -89,3 +103,5 @@ Related Models:
 ## Checking
 ## deployment
 ## Application
+## Reference
+[1] Devlin J, Chang M W, Lee K, et al. Bert: Pre-training of deep bidirectional transformers for language understanding[J]. arXiv preprint arXiv:1810.04805, 2018.
