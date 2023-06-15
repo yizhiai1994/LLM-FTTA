@@ -47,6 +47,30 @@ Related Models:
 ### Training Skills
 ### Acceleration Techniques
 ## Fine-Tuning
+### Test Tasks
+> + Sentence acceptability judgment 
+>> + CoLA (Warstadt et al., 2018)
+> + Sentiment analysis 
+>> + SST-2 (Socher et al., 2013)
+> + Paraphrasing/sentence similarity 
+>> + MRPC (Dolan and Brockett, 2005)
+>> + STS-B (Ceret al., 2017)
+>> + QQP (Iyer et al., 2017)
+> + Natural language inference 
+>> + MNLI (Williams et al., 2017)
+>> + QNLI (Rajpurkar et al., 2016)
+>> + RTE (Dagan et al., 2005)
+>> + CB (De Marneff et al., 2019)
+> + Coreference resolution 
+>> + WNLI and WSC (Levesque et al., 2012)
+> + Sentence completion 
+>> + COPA (Roemmele et al., 2011)
+> + Word sense disambiguation 
+>> + WIC (Pilehvar and Camacho-Collados, 2018)
+> + Question answering 
+>> + MultiRC (Khashabi et al., 2018)
+>> + ReCoRD (Zhang et al., 2018)
+>> + BoolQ (Clark et al., 2019))
 ## Checking
 ## deployment
 ## Application
