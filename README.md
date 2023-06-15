@@ -65,6 +65,7 @@ Detail[1]:
 Example[1]:
 > + Input1: [CLS] the man went to [MASK] store [SEP] he bought a gallon [MASK] milk [SEP]
 > + Output1: IsNext
+
 > + Input2: [CLS] the man [MASK] to the store [SEP] penguin [MASK] are flight ##less birds [SEP]
 > + Output2: NotNext
 
@@ -72,6 +73,19 @@ Related Models:
 > + BERT (BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding)
 > + UniLM (Unified Language Model Pre-training for Natural Language Understanding and Generation)
 #### Text-to-Text
+Detail[2]:
+> + The model is fed some text for context or conditioning and is then asked to produce some output text.
+
+Example[2]:
+> + Task1: Translate
+> + Input1: "translate English to German: That is good."
+> + Output1: "Das ist gut."
+
+> + Task2: Classification
+> + Input2: "mnli premise: I hate pigeons. hypothesis:My feelings towards pigeons are filled with animosity."
+> + Output2: "entailment"
+
+
 Related Models:
 > + T5 (Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer)
 ### Parameters Selection
@@ -109,3 +123,5 @@ Related Models:
 ## Application
 ## Reference
 [1] Devlin J, Chang M W, Lee K, et al. Bert: Pre-training of deep bidirectional transformers for language understanding[J]. arXiv preprint arXiv:1810.04805, 2018.
+
+[2] Raffel C, Shazeer N, Roberts A, et al. Exploring the limits of transfer learning with a unified text-to-text transformer[J]. The Journal of Machine Learning Research, 2020, 21(1): 5485-5551.
