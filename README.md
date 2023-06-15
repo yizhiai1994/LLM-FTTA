@@ -6,7 +6,7 @@ Large Language Model —— From Training To Application
 Everything I know about LLM in NLP.
 
 
-## Timeline
+## Training Pipline
 ## Data Process
 ### Public Data
 #### C4(Colossal Clean Crawled Corpus)
@@ -92,7 +92,6 @@ Related Models:
 > + T5 (Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer)
 ### Parameters Selection
 ### Optimizer
-### Training Pipline
 ### Training Skills
 ### Acceleration Techniques
 ### Test Tasks
