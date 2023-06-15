@@ -34,13 +34,28 @@ Language Options:
 > + c4/multilingual 
 
 Related Models:
-> + T5(Text To Text Transfer Transformer)
+> + T5 (Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer)
 
 ### Your Data
 ### Data Pre-Process
 ### Task Specify
 ## Pre-Training
 ### Model Structure
+### Training Objective
+#### MLM (Mask Language Model)
+Related Models:
+> + GPT-3 (GPT-3: Language Models are Few-Shot Learners)
+> + BERT (BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding)
+> + RoBERTa (RoBERTa: A Robustly Optimized BERT Pretraining Approach)
+> + ALBERT (ALBERT: A Lite BERT for Self-supervised Learning of Language Representations)
+> 
+#### NSP (Next Sentence Predict)
+Related Models:
+> + BERT (BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding)
+> + UniLM (Unified Language Model Pre-training for Natural Language Understanding and Generation)
+#### Text-to-Text
+Related Models:
+> + T5 (Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer)
 ### Parameters Selection
 ### Optimizer
 ### Training Pipline
