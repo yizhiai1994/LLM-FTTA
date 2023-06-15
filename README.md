@@ -1,4 +1,6 @@
 # LLM-FTTA (under construction)
+At the very first, I should mention that the boundary between "Pre-Train" and "Fine-Tune" is becoming increasingly unclear today. And in this article, I merge all the means in the two words in the Training Step.
+
 Large Language Model —— From Training To Application
 
 Everything I know about LLM in NLP.
@@ -93,7 +95,6 @@ Related Models:
 ### Training Pipline
 ### Training Skills
 ### Acceleration Techniques
-## Fine-Tuning
 ### Test Tasks
 > + Sentence acceptability judgment 
 >> + CoLA (Warstadt et al., 2018)
