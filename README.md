@@ -1,7 +1,9 @@
 # LLM-FTTA (under construction)
+## Before Everything
+
 At the very first, I should mention that the boundary between "Pre-Train" and "Fine-Tune" is becoming increasingly unclear today. And in this article, I merge all the means in the two words in the Training Step.
 
-Large Language Model —— From Training To Application
+
 
 Everything I know about LLM in NLP.
 
@@ -20,13 +22,15 @@ Source Paper:
 > + https://www.jmlr.org/papers/volume21/20-074/20-074.pdf
 
 Download Method
-<pre><code>pip install tfds-nightly[c4]
+```
+pip install tfds-nightly[c4]
 echo 'tfds-nightly[c4]' > /tmp/beam_requirements.txt
 python -m tensorflow_datasets.scripts.download_and_prepare \
   --datasets=c4/en \
   --data_dir=gs://$MY_BUCKET/tensorflow_datasets \
   --beam_pipeline_options="project=$MY_PROJECT,job_name=c4,staging_location=gs://$MY_BUCKET/binaries,temp_location=gs://$MY_BUCKET/temp,runner=DataflowRunner,requirements_file=/tmp/beam_requirements.txt,experiments=shuffle_mode=service,region=$MY_REGION"
-</code></pre>
+```
+
 Language Options: 
 > + c4/en.noclean
 > + c4/en
@@ -43,6 +47,17 @@ Related Models:
 ### Task Specify
 ## Pre-Training
 ### Model Structure
+
+#### BERT
+
+Source Paper:
+
+> + Devlin J, Chang M W, Lee K, et al. Bert: Pre-training of deep bidirectional transformers for language understanding[J]. arXiv preprint arXiv:1810.04805, 2018.
+
+Initialize Model Structure Code
+
+
+
 ### Training Objective
 #### MLM (Mask Language Model)
 Detail[1]:
@@ -52,8 +67,8 @@ Example[1]:
 > + Orginal: my dog is hairy
 > + Input: my dog is [MASK]
 > + Output: hairy
->> + Tips: In the paper "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", the authors said "80% of the time: Replace the word with the [MASK] token" and "10% of the time: Replace the word with a
-random word" and "10% of the time: Keep the word unchanged"
+> > + Tips: In the paper "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", the authors said "80% of the time: Replace the word with the [MASK] token" and "10% of the time: Replace the word with a
+> > random word" and "10% of the time: Keep the word unchanged"
 
 Related Models:
 > + GPT-3 (GPT-3: Language Models are Few-Shot Learners)
@@ -96,28 +111,28 @@ Related Models:
 ### Acceleration Techniques
 ### Test Tasks
 > + Sentence acceptability judgment 
->> + CoLA (Warstadt et al., 2018)
+> > + CoLA (Warstadt et al., 2018)
 > + Sentiment analysis 
->> + SST-2 (Socher et al., 2013)
+> > + SST-2 (Socher et al., 2013)
 > + Paraphrasing/sentence similarity 
->> + MRPC (Dolan and Brockett, 2005)
->> + STS-B (Ceret al., 2017)
->> + QQP (Iyer et al., 2017)
+> > + MRPC (Dolan and Brockett, 2005)
+> > + STS-B (Ceret al., 2017)
+> > + QQP (Iyer et al., 2017)
 > + Natural language inference 
->> + MNLI (Williams et al., 2017)
->> + QNLI (Rajpurkar et al., 2016)
->> + RTE (Dagan et al., 2005)
->> + CB (De Marneff et al., 2019)
+> > + MNLI (Williams et al., 2017)
+> > + QNLI (Rajpurkar et al., 2016)
+> > + RTE (Dagan et al., 2005)
+> > + CB (De Marneff et al., 2019)
 > + Coreference resolution 
->> + WNLI and WSC (Levesque et al., 2012)
+> > + WNLI and WSC (Levesque et al., 2012)
 > + Sentence completion 
->> + COPA (Roemmele et al., 2011)
+> > + COPA (Roemmele et al., 2011)
 > + Word sense disambiguation 
->> + WIC (Pilehvar and Camacho-Collados, 2018)
+> > + WIC (Pilehvar and Camacho-Collados, 2018)
 > + Question answering 
->> + MultiRC (Khashabi et al., 2018)
->> + ReCoRD (Zhang et al., 2018)
->> + BoolQ (Clark et al., 2019))
+> > + MultiRC (Khashabi et al., 2018)
+> > + ReCoRD (Zhang et al., 2018)
+> > + BoolQ (Clark et al., 2019))
 ## Checking
 ## deployment
 ## Application
